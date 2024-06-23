@@ -1,0 +1,47 @@
+### ExampleUploadMHTML
+### @name ExampleUploadMHTML
+
+POST /api/upload HTTP/1.1
+Host: localhost:3001
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: multipart/form-data; boundary=ApiBoundary
+
+--ApiBoundary
+Content-Disposition: form-data; name="file"; filename="example.mhtml"
+
+< ./example.mhtml
+
+--ApiBoundary--
+
+### ExampleUploadWrongFile
+### @name ExampleUploadWrongFile
+
+POST /api/upload HTTP/1.1
+Host: localhost:3001
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: multipart/form-data; boundary=ApiBoundary
+
+--ApiBoundary
+Content-Disposition: form-data; name="file"; filename="wrong.txt"
+
+< ./wrong.txt
+
+--ApiBoundary--
+
+### ExampleUploadBigFile
+### @name ExampleUploadBigFile
+
+POST /api/upload HTTP/1.1
+Host: localhost:3001
+Accept: application/json
+Cache-Control: no-cache
+Content-Type: multipart/form-data; boundary=ApiBoundary
+
+--ApiBoundary
+Content-Disposition: form-data; name="file"; filename="big.mhtml"
+
+< ./big.mhtml
+
+--ApiBoundary--
