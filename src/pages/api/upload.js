@@ -1,3 +1,5 @@
+"use server";
+
 import multer from 'multer';
 
 const fileFilter = (req, file, cb) => {
