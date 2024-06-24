@@ -9,6 +9,7 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
+import ExampleLayout from "@/app/example/layout";
 
 type Payment = {
     id: string
@@ -32,10 +33,10 @@ const payments: Payment[] = [
     },
 ]
 
-const ExamplePage = () => {
+const Page = () => {
     return (
-        <>
-            <div className="max-w-7xl w-full mx-auto p-4">
+        <ExampleLayout>
+            <div className="max-w-7xl w-full mx-auto mt-10 py-10">
                 <div className="rounded-md border p-8">
                     <h1 className="text-2xl font-bold mb-5">Payments</h1>
                     <Table>
@@ -60,8 +61,8 @@ const ExamplePage = () => {
                     </Table>
                 </div>
             </div>
-        </>
+        </ExampleLayout>
     )
 }
 
-export default ExamplePage
+export default Page
