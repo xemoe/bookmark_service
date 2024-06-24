@@ -15,7 +15,7 @@ export default function Home() {
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
                         <div className="flex justify-center">
-                            <a href="/example" className="inline-flex text-white bg-emerald-600 border-0 py-2
+                            <a href="/mhtml" className="inline-flex text-white bg-emerald-600 border-0 py-2
                                px-6 focus:outline-none hover:bg-emerald-600 rounded text-lg">Start Exploring
                             </a>
                             <a href="/about" className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2
